@@ -11,10 +11,21 @@
 |
 */
 
+
+//Route::get('/', 'HomeController@index')->name('home');
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('login'));
+});
+
+Route::group(['middleware' => ['auth'] ], function () {
+    //Route::get('/users{any}', 'ViewController@viewUsers')->where('any', '.*');
+    //Route::get('/users', 'ViewController@viewUsers')->name('users.view');
+    //Route::get('/sections/{any}', 'ViewController@viewSections')->where('any', '.*')/*->name('sections.view')*/;
+    //Route::get('/sections{any}', 'ViewController@viewSections')->where('any', '.*');
+    Route::resource('/users', 'UserViewController')->names('users');
+    Route::resource('/sections', 'SectionViewController')->names('sections');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+

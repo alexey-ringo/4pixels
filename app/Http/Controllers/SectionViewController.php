@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Section;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class SectionViewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        return view('sections.index');
     }
 
     /**
@@ -23,7 +24,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('sections.create');
     }
 
     /**
@@ -56,7 +57,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $section = Section::where('id', $id)->firstOrFail();
+        return view('sections.edit', compact('section'));
     }
 
     /**
