@@ -42,7 +42,7 @@
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-primary">Применить</button>
-                    <a ref="goUsersPage" :href="'/users/'" class="btn btn-default float-right" @click="goHome">Отмена</a>
+                    <a ref="goUsersPage" :href="'/users/'" class="btn btn-secondary float-right" @click="goHome">Отмена</a>
                 </div>
             </form>    
         </div>

@@ -20,7 +20,7 @@
                             <td>{{ user.name }}</td>
                             <td>{{ user.email }}</td>
                             <td>
-                                <a :href="'/users/' + user.id + '/edit'" class="btn btn-xs btn-default">Редактировать</a>                                        
+                                <a :href="'/users/' + user.id + '/edit'" class="btn btn-secondary">Редактировать</a>                                        
                                 <button class="btn btn-danger" @click.prevent = "deleteUser(user.id)">Удалить</button> 
                             </td>
                         </tr>

@@ -5,3 +5,6 @@
 ## Демо
 
 Доступна [демо-версия проекта https://4pixels.phpecommerce.ru](https://4pixels.phpecommerce.ru).
+
+- admin@test.loc
+- password

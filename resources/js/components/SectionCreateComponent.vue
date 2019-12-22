@@ -61,7 +61,7 @@
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-primary">Применить</button>
-                    <a ref="goSectionsPage" :href="'/sections/'" class="btn btn-default float-right">Отмена</a>
+                    <a ref="goSectionsPage" :href="'/sections/'" class="btn btn-secondary float-right">Отмена</a>
                 </div>
             </form>    
         </div>

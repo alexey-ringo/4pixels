@@ -38639,7 +38639,7 @@ var render = function() {
               "a",
               {
                 ref: "goSectionsPage",
-                staticClass: "btn btn-default float-right",
+                staticClass: "btn btn-secondary float-right",
                 attrs: { href: "/sections/" }
               },
               [_vm._v("Отмена")]
@@ -38875,7 +38875,7 @@ var render = function() {
               "a",
               {
                 ref: "goSectionsPage",
-                staticClass: "btn btn-default float-right",
+                staticClass: "btn btn-secondary float-right",
                 attrs: { href: "/sections/" }
               },
               [_vm._v("Отмена")]
@@ -38971,7 +38971,7 @@ var render = function() {
                   _c(
                     "a",
                     {
-                      staticClass: "btn btn-xs btn-default",
+                      staticClass: "btn btn-secondary",
                       attrs: { href: "/sections/" + section.id + "/edit" }
                     },
                     [_vm._v("Редактировать")]
@@ -39225,7 +39225,7 @@ var render = function() {
               "a",
               {
                 ref: "goUsersPage",
-                staticClass: "btn btn-default float-right",
+                staticClass: "btn btn-secondary float-right",
                 attrs: { href: "/users/" },
                 on: { click: _vm.goHome }
               },
@@ -39387,7 +39387,7 @@ var render = function() {
               "a",
               {
                 ref: "goUsersPage",
-                staticClass: "btn btn-default float-right",
+                staticClass: "btn btn-secondary float-right",
                 attrs: { href: "/users/" }
               },
               [_vm._v("Отмена")]
@@ -39464,7 +39464,7 @@ var render = function() {
                   _c(
                     "a",
                     {
-                      staticClass: "btn btn-xs btn-default",
+                      staticClass: "btn btn-secondary",
                       attrs: { href: "/users/" + user.id + "/edit" }
                     },
                     [_vm._v("Редактировать")]

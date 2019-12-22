@@ -42,7 +42,7 @@ class UserController extends Controller
 
         $results = User::all()->sortByDesc('created_at');
         $total = $results->count();
-        $pageSize = 3;
+        $pageSize = 5;
         $users = CollectionHelper::paginate($results, $total, $pageSize);
         
         return new UserCollection($users);

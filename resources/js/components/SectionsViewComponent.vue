@@ -29,7 +29,7 @@
                                 </div>                                
                             </td>
                             <td>
-                                <a :href="'/sections/' + section.id + '/edit'" class="btn btn-xs btn-default">Редактировать</a>                                        
+                                <a :href="'/sections/' + section.id + '/edit'" class="btn btn-secondary">Редактировать</a>                                        
                                 <button class="btn btn-danger" @click.prevent = "deleteSection(section.id)">Удалить</button> 
                             </td>
                         </tr>
