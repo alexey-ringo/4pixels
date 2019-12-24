@@ -13,12 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
-Route::resource('/users', 'Api\UserController')->names('api.users');
-Route::resource('/sections', 'Api\SectionController')->names('api.sections');
-Route::post('/upload', 'Api\ImageController@upload')->name('api.upload');
-
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
 

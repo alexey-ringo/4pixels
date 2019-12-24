@@ -25,7 +25,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/users';
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -42,6 +42,6 @@ class LoginController extends Controller
     //if(condition) {
     //  return "/your/path";
     //} 
-    return '/users';
+    return '/home';
     }
 }

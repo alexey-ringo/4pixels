@@ -12,19 +12,7 @@
 */
 
 
-//Route::get('/', 'HomeController@index')->name('home');
-Route::get('/', function () {
-    return redirect(route('login'));
-});
-
-Route::group(['middleware' => ['auth'] ], function () {
-    //Route::get('/users{any}', 'ViewController@viewUsers')->where('any', '.*');
-    //Route::get('/users', 'ViewController@viewUsers')->name('users.view');
-    //Route::get('/sections/{any}', 'ViewController@viewSections')->where('any', '.*')/*->name('sections.view')*/;
-    //Route::get('/sections{any}', 'ViewController@viewSections')->where('any', '.*');
-    Route::resource('/users', 'UserViewController')->names('users');
-    Route::resource('/sections', 'SectionViewController')->names('sections');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 

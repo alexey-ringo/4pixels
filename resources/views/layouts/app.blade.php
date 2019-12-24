@@ -35,11 +35,8 @@
                 @auth
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li><a href="{{ route('users.index') }}">Пользователи</a></li>
-                    </ul>
-                    <ul class="navbar-nav mr-auto">
-                        <li><a href="{{ route('sections.index') }}">Отделы</a></li>
-                    </ul>
+                        
+                    </ul>                    
                 @endauth
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
