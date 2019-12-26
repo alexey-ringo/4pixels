@@ -12,8 +12,16 @@
 */
 
 
-Route::get('/', 'HomeController@index')->name('home');
+//Route::get('/', function () {
+//    return redirect(route('login'));
+//});
+
+Route::get('/{any}', 'ViewController@index')->where('any', '.*');
 
 Auth::routes();
+
+
+
+
 
 

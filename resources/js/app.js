@@ -19,6 +19,14 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+//Импорт vue-роутера
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+
+import VueAxios from 'vue-axios';
+import axios from 'axios';
+Vue.use(VueAxios, axios);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -26,8 +34,11 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-//import router from './router';
+import App from "./components/App"; 
+import router from './router';
 
 const app = new Vue({
     el: '#app',
+    render : h => h(App),
+    router
 });

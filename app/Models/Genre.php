@@ -4,18 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Section extends Model
+class Genre extends Model
 {
+    protected $table = 'genres';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'description', 'logo'
+        'title'
     ];
 
-    public function users() {
-        return $this->belongsToMany(User::class,'section_user');
+    public function books() {
+        return $this->belongsToMany(Book::class,'book_genre');
     }
 }
