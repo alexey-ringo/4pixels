@@ -1,4 +1,4 @@
-## Простой CRUD Laravel & Vue (html rendering and JSON-API REST)
+## Простая SPA библиотека книг с базовой авторизацией
 
 
 
@@ -6,5 +6,5 @@
 
 Доступна [демо-версия проекта https://4pixels.phpecommerce.ru](https://4pixels.phpecommerce.ru).
 
-- admin@test.loc
-- password
+- Зарегистрированный пользователь имеет возможность добавлять книги и редактировать свои
+- 
